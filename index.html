@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trisha Telkar - Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #87CEFA, #E0F7FF); /* Sky blue gradient */
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    h1, h2 {
+      color: #007BFF; /* Darker blue for headings */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: 0.3s;
+    }
+
+    p, li, a {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 0.8s forwards;
+    }
+
+    p {
+      margin-bottom: 15px;
+      animation-delay: 0.5s;
+    }
+
+    ul {
+      margin-bottom: 15px;
+      list-style-type: disc;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      animation-delay: 0.6s;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    /* Sections hover effect */
+    section {
+      margin-bottom: 30px;
+      padding: 15px;
+      border-left: 4px solid #007BFF;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    /* BotPenguin Widget fix */
+    #botpenguin-widget {
+      z-index: 9999 !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>👋 Hi, I’m Trisha Telkar</h1>
+    <p>Welcome to my portfolio website. Here’s everything about me:</p>
+
+    <section>
+      <h2>📚 Education</h2>
+      <ul>
+        <li>B.Tech in Computer Science, PVKK Institute of Technology (2025)</li>
+        <li>Intermediate (MPC), Narayana Junior College (2021)</li>
+        <li>Matriculation, St. Augustine’s School (2019)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💼 Skills</h2>
+      <ul>
+        <li>Programming: Python (Proficient), HTML, CSS, SQL, Java (Basic), Django</li>
+        <li>AI/ML Tools: NumPy, Pandas, Matplotlib, Scikit-learn, NLTK, OpenCV, MediaPipe</li>
+        <li>Databases: MySQL</li>
+        <li>Soft Skills: Teamwork, Project Management, Problem-Solving</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🚀 Projects</h2>
+      <ul>
+        <li><b>Cyber Saver (2025):</b> ML-based cyberbullying detection with NLP + OpenCV.</li>
+        <li><b>Drowsiness Detection (2024):</b> Real-time driver monitoring using OpenCV (95% accuracy).</li>
+        <li><b>Rock-Paper-Scissors (2024):</b> Gesture recognition game with OpenCV + MediaPipe.</li>
+        <li><b>Nutrition Awareness (2023):</b> Community project on child health & hygiene.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🏢 Experience</h2>
+      <ul>
+        <li><b>QSpiders (2025 – Present):</b> Full Stack Developer Intern</li>
+        <li><b>Vault Sphere Technologies (2025):</b> Data Science Intern</li>
+        <li><b>Main Flow Service & Technologies (2024):</b> Python Programming Intern</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎓 Certifications</h2>
+      <ul>
+        <li>GenAI Data Analytics – Forage (2025)</li>
+        <li>Python for Data Science – IBM SkillsBuild (2025)</li>
+        <li>Python Essentials 1 – Cisco (2025)</li>
+        <li>IoT – NPTEL (2024)</li>
+        <li>Environmental Economics – NPTEL (2024)</li>
+        <li>TCS Career Edge – ION (2023)</li>
+      </ul>
+    </section>
+
+    <p>👉 Connect with me on 
+      <a href="https://github.com/trishatelkar14" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/trisha-telkar-8b45a32b6" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+
+  <!-- BotPenguin Widget -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      window.botpenguin = {
+        configuration: {
+          botId: "68bdab48a3d4cb672875d878,68bd9072ad4f7de8eb312967",
+          position: "right",
+          theme: "light"
+        }
+      };
+      var script = document.createElement("script");
+      script.src = "https://cdn.botpenguin.com/website-bot.js";
+      script.async = true;
+      document.body.appendChild(script);
+    });
+  </script>
+</body>
+</html>
